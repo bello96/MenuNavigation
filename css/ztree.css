@@ -1,0 +1,54 @@
+.ztree-container {
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 10px;
+    width: 600px;
+    border: 1px dashed #AAA;
+    user-select: none;
+}
+
+.ztree-container .ztree-level {
+    display: none;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.ztree-container .ztree-level.no-margin {
+    display: block;
+    margin-left: 0;
+}
+
+.ztree-container .ztree-level li {
+    position: relative;
+    padding-left: 15px;
+    line-height: 30px;
+}
+
+.ztree-container .ztree-level li .ztree-icon {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    line-height: 8px;
+    text-align: center;
+    border: 1px solid #AAA;
+    background: #EEE;
+    cursor: pointer;
+}
+
+.ztree-container .ztree-level li .ztree-icon:after {
+    display: block;
+    content: "+";
+    font-size: 12px;
+    font-style: normal;
+}
+
+.ztree-container .ztree-level li .ztree-icon.open:after {
+    content: "-";
+}
+
+.ztree-container .ztree-level li .ztree-title {
+    color: #000;
+}
